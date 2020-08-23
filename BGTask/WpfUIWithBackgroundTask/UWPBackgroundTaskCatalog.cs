@@ -11,6 +11,9 @@ namespace WpfUIWithBackgroundTask
     {
         public List<string> GetRegisteredTasks()
         {
+            int c = BackgroundTaskRegistration.AllTasks.Count();
+
+
             return BackgroundTaskRegistration.AllTasks.Select(t => t.Value.Name).ToList<string>();
         }
 
